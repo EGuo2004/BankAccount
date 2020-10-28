@@ -20,4 +20,12 @@ public class BankAccount {
     this.password = newPass;
   }
 
+  public boolean deposit(double amount) {
+    if (amount < 0) {
+      return false;
+    } else {
+      balance += amount;
+      return true;
+    }
+  }
 }
