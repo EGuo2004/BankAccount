@@ -1,17 +1,42 @@
 public class BankTester {
   public static void main(String[] args) {
-    BankAccount b1 = new BankAccount(0045651,"APCS");
+    BankAccount b1 = new BankAccount(5125511,"APCS");
+    BankAccount b2 = new BankAccount(4124717, "ILikeTrains");
 
-    System.out.println(b1.getBalance());
+    // System.out.println(b1.getBalance());
     System.out.println(b1.getAccountID());
-    System.out.println(b1.deposit(-10));
-    System.out.println(b1.deposit(500));
-    System.out.println(b1.getBalance());
-    System.out.println(b1.withdraw(-10));
-    System.out.println(b1.withdraw(600));
-    System.out.println(b1.withdraw(200));
-    System.out.println(b1.getBalance());
-    System.out.println(b1.toString());
+    // System.out.println(b1.deposit(-10));
+    // System.out.println(b1.deposit(500));
+    // System.out.println(b1.getBalance());
+    // System.out.println(b1.withdraw(-10));
+    // System.out.println(b1.withdraw(600));
+    // System.out.println(b1.withdraw(200));
+    // System.out.println(b1.getBalance());
+    // System.out.println(b1.toString());
+
+    System.out.println(b1);
+    b1.deposit(-10);
+    b1.deposit(500);
+    System.out.println(b1);
+    b1.withdraw(-10);
+    b1.withdraw(600);
+    b1.withdraw(200);
+    System.out.println(b1);
+    b1.deposit(10000);
+
+    b1.transferTo(b2,500 ,"APCS");
+    System.out.println(b1);
+    System.out.println(b2);
+    b1.transferTo(b2, 50000, "APCS");
+    System.out.println(b1);
+    System.out.println(b2);
+
+    b1.setPassword("IAlsoLikeTrains");
+    b1.transferTo(b2,500 ,"APCS");
+    System.out.println(b1);
+    System.out.println(b2);
+
+
   }
 }
 
