@@ -9,6 +9,10 @@ public class BankAccount {
   }
 
   public String getBalance() {
-    return ("Current Balance:"+balance);
+    return ("Current Balance: "+balance);
+  }
+
+  public String getAccountID() {
+    return ("Account Number: " + accountID);
   }
 }
